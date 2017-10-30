@@ -25,8 +25,6 @@ class StreamingOutput(object):
 
     def write(self, buf):
         if buf.startswith(b'\xff\xd8'):
-            # New frame, copy the existing buffer's content and notify all
-            # clients it's available
             self.buffer.truncate()
             with self.condition:
                 self.frame = self.buffer.getvalue()
@@ -77,7 +75,7 @@ class StreamingServer(socketserver.ThreadingMixIn, server.HTTPServer):
     allow_reuse_address = True
     daemon_threads = True
 
-with picamera.PiCamera(resolution='1024x768', framerate=24) as camera:
+with picamera.PiCamera(resolution='1024x768', framerate=30) as camera:
     output = StreamingOutput()
     camera.start_recording(output, format='mjpeg')
     try:
