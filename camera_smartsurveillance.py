@@ -12,7 +12,7 @@ PAGE="""\
 </head>
 <body>
 <center><h1>Smart Surveillance</h1></center>
-<center><img src="stream.mjpg" width="1280" height="720"></center>
+<center><img src="stream.mjpg" width="1024" height="768"></center>
 </body>
 </html>
 """
@@ -77,7 +77,7 @@ class StreamingServer(socketserver.ThreadingMixIn, server.HTTPServer):
     allow_reuse_address = True
     daemon_threads = True
 
-with picamera.PiCamera(resolution='1280x720', framerate=24) as camera:
+with picamera.PiCamera(resolution='1024x768', framerate=24) as camera:
     output = StreamingOutput()
     camera.start_recording(output, format='mjpeg')
     try:
