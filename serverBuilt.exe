@@ -31,5 +31,5 @@ Include /etc/phpmyadmin/apache.conf # at the end of the text
 sudo /etc/init.d/apache2 restart
 
 # View the built mySQL database on a browser
-http://192.168.1.108/phpmyadmin #type this on the browser by replacing the ip address with raspberry pi's personal ip address
+#http://192.168.1.108/phpmyadmin #type this on the browser by replacing the ip address with raspberry pi's personal ip address
 
