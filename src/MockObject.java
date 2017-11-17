@@ -5,6 +5,7 @@
 
 import static org.easymock.EasyMock.*;
 import org.junit.*;
+import static org.junit.Assert.assertEquals;
 
 public class MockObject {
 
