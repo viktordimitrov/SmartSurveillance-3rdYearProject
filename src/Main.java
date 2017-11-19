@@ -7,7 +7,7 @@ public class Main {
 		
 	}
 	
-	class distributedSystemUnitTestting{
+	class distributedSystemUnitTesting{
 		
 	}
 
