@@ -16,7 +16,7 @@ public class MockObject {
 	private static String INVALID_URL = "";
 	  
 	////////////////////////////////////////////////
-	
+	// App
 	
 	public String isvalidURL() {
 		return VALID_URL;
@@ -46,15 +46,14 @@ public class MockObject {
 
 	
 	///////////////////////////////////////////
-	class testApp{
-		
-	}
+
 	
 	class testServer{
 		
 	}
 	
 	/////////////////////////////////////////
+	// camera
 	public boolean isStreamOn() {
 		return streamOn;
 	}
