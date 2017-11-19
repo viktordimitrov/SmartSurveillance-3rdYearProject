@@ -9,14 +9,7 @@ import static org.junit.Assert.assertEquals;
 
 public class MockObject {
 
-	
-	String message = "Hello World";	
-	   MessageUtil messageUtil = new MessageUtil(message);
 
-	   @Test
-	   public void testPrintMessage() {	  
-	      assertEquals(message,messageUtil.printMessage());
-	   }
 	  
 	class testApp{
 		
@@ -27,8 +20,13 @@ public class MockObject {
 	}
 	
 	class testCamera{
+		public boolean testStreamOn(){
+			return true;
+		}
 		
 	}
+	
+	
 	
 	class testMotor{
 		
