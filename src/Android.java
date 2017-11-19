@@ -15,7 +15,6 @@ public class Android extends TestCase{
         assertEquals("http://www.google.com", obj.isvalidURL());
     }
 
-<<<<<<< HEAD
 	public final void testLoadInValidUrl() {
         assertEquals("", obj.isInvalidURL());
     }
@@ -65,8 +64,5 @@ public class Android extends TestCase{
 <<<<<<< HEAD
 	
 */
-=======
-	*/
 
->>>>>>> 7e31739d614a02095e31f9f4527227d6d96cc2ef
 }
