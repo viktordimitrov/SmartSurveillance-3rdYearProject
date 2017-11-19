@@ -1,7 +1,7 @@
 import junit.framework.*;
 
 // methods for server tests
-public class ServerTest extends TestCase {
+public class Server extends TestCase {
 	  protected int value1, value2;
 	   
 	   // assigning the values
@@ -14,6 +14,14 @@ public class ServerTest extends TestCase {
 	   public void testAdd(){
 	      double result = value1 + value2;
 	      assertTrue(result == 6);
+	   }
+	   
+	   ///////////////////////////
+	   
+	   MockObject obj = new MockObject();
+	   
+	   public boolean isStreamOn(){
+		   assertTrue(true, MockObject.testCamera());
 	   }
 	
 }
