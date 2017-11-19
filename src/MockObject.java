@@ -7,9 +7,21 @@ import org.junit.*;
 import static org.junit.Assert.assertEquals;
 
 public class MockObject {
+	
+	// camera
 	protected boolean streamOn = true;
 
+	// android
+	private static final String VALID_URL = "http://www.google.com";
+	private static final String INVALID_URL = "http://invalid.url.doesnotexist987.com";
 	  
+	
+	class testPing{
+		
+		
+	}
+	
+	
 	class testApp{
 		
 	}
