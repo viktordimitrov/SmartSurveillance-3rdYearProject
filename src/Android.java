@@ -15,6 +15,7 @@ public class Android extends TestCase{
         assertEquals("http://www.google.com", obj.isvalidURL());
     }
 
+<<<<<<< HEAD
 	public final void testLoadInValidUrl() {
         assertEquals("", obj.isInvalidURL());
     }
@@ -22,6 +23,12 @@ public class Android extends TestCase{
    // public final void testLoadInvalidUrl() {
         //assertLoadUrl(INVALID_URL);
         //assertTrue(mMockWebViewClient.mError);
+=======
+	/*
+    public final void testLoadInvalidUrl() {
+        assertLoadUrl(INVALID_URL);
+        assertTrue(mMockWebViewClient.mError);
+>>>>>>> 7e31739d614a02095e31f9f4527227d6d96cc2ef
     }
 
     //private void assertLoadUrl(String url) {
@@ -55,6 +62,11 @@ public class Android extends TestCase{
 		assertTrue("This will succeed.", true);
 	}
 
+<<<<<<< HEAD
 	
 */
+=======
+	*/
+
+>>>>>>> 7e31739d614a02095e31f9f4527227d6d96cc2ef
 }
