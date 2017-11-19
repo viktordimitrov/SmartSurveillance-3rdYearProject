@@ -1,4 +1,6 @@
 import junit.framework.*;
+import org.junit.*;
+import static org.junit.Assert.assertEquals;
 
 // methods for server tests
 public class Server extends TestCase {

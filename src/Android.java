@@ -1,3 +1,4 @@
+import javafx.scene.web.WebView;
 import junit.framework.*;
 
 public class Android extends TestCase{
