@@ -3,12 +3,11 @@
  * 
  */
 
-import static org.easymock.EasyMock.*;
 import org.junit.*;
 import static org.junit.Assert.assertEquals;
 
 public class MockObject {
-
+	protected boolean streamOn = true, value2;
 
 	  
 	class testApp{
@@ -19,12 +18,23 @@ public class MockObject {
 		
 	}
 	
+	/////////////////////////////////////////
 	class testCamera{
 		public boolean testStreamOn(){
-			return true;
+			return streamOn;
 		}
 		
 	}
+	public boolean isStreamOn() {
+		return streamOn;
+	}
+
+	public void setStreamOn(boolean streamOn) {
+		this.streamOn = streamOn;
+	}
+	
+	//////////////////////////////////////////////
+	
 	
 	
 	
@@ -35,5 +45,7 @@ public class MockObject {
 	class testSensor{
 		
 	}
+
+	
 	
 }

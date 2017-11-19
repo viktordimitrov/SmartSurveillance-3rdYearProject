@@ -20,8 +20,8 @@ public class Server extends TestCase {
 	   
 	   MockObject obj = new MockObject();
 	   
-	   public boolean isStreamOn(){
-		   assertTrue(true, MockObject.testCamera());
+	   public void isStreamOn(){
+		   assertEquals(true, obj.isStreamOn());
 	   }
 	
 }
