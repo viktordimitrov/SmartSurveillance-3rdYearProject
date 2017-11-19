@@ -3,16 +3,14 @@ import junit.framework.*;
 
 public class Android extends TestCase{
 	
-	private static final String VALID_URL = "http://www.google.com";
-	private static final String INVALID_URL = "http://invalid.url.doesnotexist987.com";
-	private static final long TIMEOUT = 5000; 
+	MockObject obj = new MockObject();
+	
 	private Enlighten_Webview_Main mActivity;
 	private WebView mWeb;
 	private WebViewClient mMockWebViewClient;
 	
 	public final void testLoadValidUrl() {
-        assertLoadUrl(VALID_URL);
-        assertFalse(mMockWebViewClient, mError);
+        assertEquals("http://www.google.com", obj.isvalidURL());
     }
 
     public final void testLoadInvalidUrl() {

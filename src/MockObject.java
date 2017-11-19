@@ -15,13 +15,28 @@ public class MockObject {
 	private static final String VALID_URL = "http://www.google.com";
 	private static final String INVALID_URL = "http://invalid.url.doesnotexist987.com";
 	  
-	
+	////////////////////////////////////////////////
 	class testPing{
-		
+		public String testValid_URL(){
+			return VALID_URL;
+		}
 		
 	}
 	
+	public String isvalidURL() {
+		return VALID_URL;
+	}
 	
+	public static String getValidUrl() {
+		return VALID_URL;
+	}
+
+	public static String getInvalidUrl() {
+		return INVALID_URL;
+	}
+
+	
+	///////////////////////////////////////////
 	class testApp{
 		
 	}
@@ -57,7 +72,7 @@ public class MockObject {
 	class testSensor{
 		
 	}
-
+	
 	
 	
 }
