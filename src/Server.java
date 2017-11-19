@@ -1,7 +1,7 @@
 // methods for server tests
 public class Server {
 
-	public void boolean isuserAdded{
+	public void boolean isUserAdded{
 		
 	}
 }
