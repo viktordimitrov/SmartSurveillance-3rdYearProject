@@ -11,7 +11,8 @@ PAGE="""\
 <title>Smart Surveillance</title>
 </head>
 <body>
-<center><h1>Smart Surveillance</h1></center>
+<center><h1>Smart Surveillance - Video Live Stream</h1></center>
+
 <center><img src="stream.mjpg" width="640" height="480"></center>
 </body>
 </html>
@@ -84,3 +85,4 @@ with picamera.PiCamera(resolution='640x480', framerate=30) as camera:
         server.serve_forever()
     finally:
         camera.stop_recording()
+        
