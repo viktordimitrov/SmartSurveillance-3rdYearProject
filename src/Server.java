@@ -23,5 +23,29 @@ public class Server extends TestCase {
 	   public boolean isStreamOn(){
 		   assertTrue(true, MockObject.testCamera());
 	   }
+
+	public int getValue1() {
+		return value1;
+	}
+
+	public void setValue1(int value1) {
+		this.value1 = value1;
+	}
+
+	public int getValue2() {
+		return value2;
+	}
+
+	public void setValue2(int value2) {
+		this.value2 = value2;
+	}
+
+	public MockObject getObj() {
+		return obj;
+	}
+
+	public void setObj(MockObject obj) {
+		this.obj = obj;
+	}
 	
 }
