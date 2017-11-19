@@ -7,7 +7,7 @@ import org.junit.*;
 import static org.junit.Assert.assertEquals;
 
 public class MockObject {
-	protected boolean streamOn = true, value2;
+	protected boolean streamOn = true;
 
 	  
 	class testApp{

@@ -20,7 +20,7 @@ public class Server extends TestCase {
 	   
 	   MockObject obj = new MockObject();
 	   
-	   public void isStreamOn(){
+	   public void testStreamOn(){
 		   assertEquals(true, obj.isStreamOn());
 	   }
 	
