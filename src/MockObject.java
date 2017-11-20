@@ -53,7 +53,7 @@ public class MockObject {
 	    private String jdbcDriver = "com.mysql.jdbc.Driver";
 	    private String dbAddress = "jdbc:mysql://localhost:3306/";
 	    private String userPass = "?user=root&password=";
-	    private String dbName = "TIGER19";
+	    private String dbName = "user_info";
 	    private String userName = "root";
 	    private String password = "";
 
