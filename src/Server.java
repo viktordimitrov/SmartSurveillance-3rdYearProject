@@ -30,7 +30,7 @@ public class Server extends TestCase {
 	   
 	   
 	   
-	   public void databaseExists(){
+	   public void testDatabaseExists(){
 		   assertEquals(true, obj.isDatabaseAvaialable());
 	   }
 	   
