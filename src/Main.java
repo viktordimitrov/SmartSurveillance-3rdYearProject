@@ -12,7 +12,7 @@ public class Main extends MockObject {
 	class distributedSystemUnitTesting{
 		//Server ser = new Server();
 		MockObject obj = new MockObject();
-		
+		JDBCExample test = new JDBCExample();
 	
 	
 	}

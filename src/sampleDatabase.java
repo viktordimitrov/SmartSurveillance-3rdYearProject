@@ -1,12 +1,12 @@
 import java.sql.*;
 
-public class JDBCExample {
+public class sampleDatabase {
    // JDBC driver name and database URL
    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-   static final String DB_URL = "jdbc:mysql://localhost:3306/mysql";
+   static final String DB_URL = "jdbc:mysql://localhost:3306/test";
 
    //  Database credentials
-   static final String USER = "username";
+   static final String USER = "root";
    static final String PASS = "";
    
    public static void main(String[] args) {
@@ -25,11 +25,10 @@ public class JDBCExample {
       System.out.println("Creating table in given database...");
       stmt = conn.createStatement();
       
-      String sql = "CREATE TABLE REGISTRATION " +
-                   "(id INTEGER not NULL, " +
-                   " first VARCHAR(255), " + 
-                   " last VARCHAR(255), " + 
-                   " age INTEGER, " + 
+      String sql = "CREATE TABLE UserInfo " +
+                   "(id TIMESTAMP not NULL, " +
+                   " user_name VARCHAR(255), " + 
+                   " password VARCHAR(255), " + 
                    " PRIMARY KEY ( id ))"; 
 
       stmt.executeUpdate(sql);

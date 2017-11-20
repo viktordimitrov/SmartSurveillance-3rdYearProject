@@ -30,14 +30,6 @@ public class MockObject {
 	public String isInvalidURL() {
 		return INVALID_URL;
 	}
-	
-	public static String getValidUrl() {
-		return VALID_URL;
-	}
-
-	public static String getInvalidUrl() {
-		return INVALID_URL;
-	}
 
 	
 	///////////////////////////////////////////
