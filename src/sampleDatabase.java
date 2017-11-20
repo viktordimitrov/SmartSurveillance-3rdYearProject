@@ -27,9 +27,17 @@ public class sampleDatabase {
       //STEP 4: Execute a query
       System.out.println("Creating table in given database...");
       stmt = conn.createStatement();
+      
+      //checks if table in database exists
       tableExists = tableExist(conn, UserInfo);
       
+      //if table exists printout this
       if (tableExists = false){
+      System.out.println("Table is already created.");
+      }
+      
+      //if table does not exist do this
+      if (tableExists = true){
     	  String sql = "CREATE TABLE UserInfo " +
                   "(id TIMESTAMP not NULL, " +
                   " user_name VARCHAR(255), " + 
@@ -40,9 +48,6 @@ public class sampleDatabase {
       System.out.println("Created table in given database...");
       }
       
-      if (tableExists = true){
-      System.out.println("Table is already created.");
-      }
       
    }
      catch (SQLException sqlException) {
@@ -81,7 +86,7 @@ public class sampleDatabase {
 	    boolean tExists = false;
 	    try (ResultSet rs = conn.getMetaData().getTables(null, null, tableName, null)) {
 	        while (rs.next()) { 
-	            String tName = rs.getString("TABLE_NAME");
+	            String tName = rs.getString("UserInfo");
 	            if (tName != null && tName.equals(tableName)) {
 	                tExists = true;
 	                break;
