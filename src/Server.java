@@ -25,5 +25,10 @@ public class Server extends TestCase {
 	   public void testStreamOn(){
 		   assertEquals(true, obj.isStreamOn());
 	   }
+	   
+	   public void createBoolean(){
+		   
+		   assertEquals(true,
+	   }
 	
 }

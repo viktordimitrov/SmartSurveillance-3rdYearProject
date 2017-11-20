@@ -3,13 +3,15 @@
 
 public class Main {
 	
+	public static void main(String[] args){
 	class generalUtilityTesting{
-		
+		Android app = new Android();
 	}
 	
 	class distributedSystemUnitTesting{
-		
+		Server ser = new Server();
 	}
-
+	
+	}
 }
 
