@@ -8,8 +8,6 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.File;
 
-
-
 public class MockObject {
 	
 	// camera
@@ -22,10 +20,10 @@ public class MockObject {
 	//server
 	public boolean databaseCreated = true;
 	  
-	////////////////////////////////////////////////
+	/////////////////////////////////////////
 	// App
 	
-	public String isvalidURL() {
+	public String isValidURL() {
 		return VALID_URL;
 	}
 	
@@ -34,7 +32,7 @@ public class MockObject {
 	}
 
 	
-	///////////////////////////////////////////
+	////////////////////////////////////////
 	// server
 	// https://stackoverflow.com/questions/19016363/java-creating-tables-in-mysql-database
 	
@@ -50,9 +48,7 @@ public class MockObject {
 		return streamOn;
 	}
 	
-	//////////////////////////////////////////////
-	
-	
+	/////////////////////////////////////////
 	
 	
 	class testMotor{
@@ -62,7 +58,5 @@ public class MockObject {
 	class testSensor{
 		
 	}
-	
-	
 	
 }

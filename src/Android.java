@@ -1,7 +1,7 @@
 //import javafx.scene.web.WebView;
 import junit.framework.*;
 import org.junit.*;
-//import static org.junit.Assert.assertEquals;
+//import static org.junit.Assert.assertEquals;  
 
 public class Android extends TestCase{
 	
@@ -12,12 +12,12 @@ public class Android extends TestCase{
 	//private WebViewClient mMockWebViewClient;
 	
 	public final void testLoadValidUrl() {
-        assertEquals("http://www.google.com", obj.isvalidURL());
+        assertEquals("http://www.google.com", obj.isValidURL());
     }
 
 	public final void testLoadInValidUrl() {
         assertEquals("", obj.isInvalidURL());
-        assertNotSame("asdf", obj.isvalidURL());
+        assertNotSame("asdf", obj.isValidURL());
     }
 	
 /*
