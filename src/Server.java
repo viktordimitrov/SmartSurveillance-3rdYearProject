@@ -2,6 +2,8 @@ import junit.framework.*;
 import org.junit.*;
 import static org.junit.Assert.assertEquals;
 
+import java.io.File;
+
 // methods for server tests
 public class Server extends TestCase {
 	  protected int value1, value2;
@@ -26,9 +28,12 @@ public class Server extends TestCase {
 		   assertEquals(true, obj.isStreamOn());
 	   }
 	   
-	   public void createBoolean(){
-		   
-		   //assertEquals(true, obj.isDB)
+	   
+	   
+	   public void databaseExists(){
+		   assertEquals(true, obj.isDatabaseAvaialable());
 	   }
+	   
+	   
 	
 }

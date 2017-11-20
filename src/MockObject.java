@@ -6,6 +6,8 @@
 import org.junit.*;
 import static org.junit.Assert.assertEquals;
 
+import java.io.File;
+
 
 
 public class MockObject {
@@ -36,7 +38,11 @@ public class MockObject {
 	// server
 	// https://stackoverflow.com/questions/19016363/java-creating-tables-in-mysql-database
 	
-	//Dbstuff john = new Dbstuff();
+	 public boolean isDatabaseAvaialable(){
+		   File tmpDir = new File("c:\\userinfo.ibd");
+		   boolean exists = tmpDir.exists();
+		   return exists;
+	 }
 	
 	/////////////////////////////////////////
 	// camera
