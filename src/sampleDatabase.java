@@ -8,6 +8,8 @@ public class sampleDatabase {
    //  Database credentials
    static final String USER = "root";
    static final String PASS = "";
+   static final String UserInfo = null;
+   static boolean tableExists;
    
    public static void main(String[] args) {
    Connection conn = null;
@@ -21,22 +23,41 @@ public class sampleDatabase {
       conn = DriverManager.getConnection(DB_URL, USER, PASS);
       System.out.println("Connected database successfully...");
       
+      
       //STEP 4: Execute a query
       System.out.println("Creating table in given database...");
       stmt = conn.createStatement();
+      tableExists = tableExist(conn, UserInfo);
       
-      String sql = "CREATE TABLE UserInfo " +
-                   "(id TIMESTAMP not NULL, " +
-                   " user_name VARCHAR(255), " + 
-                   " password VARCHAR(255), " + 
-                   " PRIMARY KEY ( id ))"; 
+      if (tableExists = false){
+    	  String sql = "CREATE TABLE UserInfo " +
+                  "(id TIMESTAMP not NULL, " +
+                  " user_name VARCHAR(255), " + 
+                  " password VARCHAR(255), " + 
+                  " PRIMARY KEY ( id ))"; 
 
       stmt.executeUpdate(sql);
       System.out.println("Created table in given database...");
-   }catch(SQLException se){
-      //Handle errors for JDBC
-      se.printStackTrace();
-   }catch(Exception e){
+      }
+      
+      if (tableExists = true){
+      System.out.println("Table is already created.");
+      }
+      
+   }
+     catch (SQLException sqlException) {
+       if (sqlException.getErrorCode() == 1007) {
+           // Database already exists error
+           System.out.println("Database is already created");
+       } else {
+           // Some other problems, e.g. Server down, no permission, etc
+           sqlException.printStackTrace();
+       }
+   } catch (ClassNotFoundException e) {
+       // No driver class found!
+   }
+   
+   catch(Exception e){
       //Handle errors for Class.forName
       e.printStackTrace();
    }finally{
@@ -55,4 +76,18 @@ public class sampleDatabase {
    }//end try
    System.out.println("Goodbye!");
 }//end main
-}//end JDBCExample
+   
+   public static boolean tableExist(Connection conn, String tableName) throws SQLException {
+	    boolean tExists = false;
+	    try (ResultSet rs = conn.getMetaData().getTables(null, null, tableName, null)) {
+	        while (rs.next()) { 
+	            String tName = rs.getString("TABLE_NAME");
+	            if (tName != null && tName.equals(tableName)) {
+	                tExists = true;
+	                break;
+	            }
+	        }
+	    }
+	    return tExists;
+	}
+}//end sampleDatabase
