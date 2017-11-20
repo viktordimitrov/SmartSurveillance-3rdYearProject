@@ -21,11 +21,6 @@ public class Android extends TestCase{
     }
 	
 /*
-    public final void testLoadInvalidUrl() {
-        assertLoadUrl(INVALID_URL);
-        assertTrue(mMockWebViewClient.mError);
-
-    }
 
     //private void assertLoadUrl(String url) {
         //mWeb.loadUrl(url);
@@ -58,5 +53,5 @@ public class Android extends TestCase{
 		assertTrue("This will succeed.", true);
 	}
 */
-
+	
 }
