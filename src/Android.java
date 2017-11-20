@@ -20,19 +20,12 @@ public class Android extends TestCase{
         assertNotSame("asdf", obj.isvalidURL());
     }
 	
-	
-	
-	
-	/*
-   // public final void testLoadInvalidUrl() {
-        //assertLoadUrl(INVALID_URL);
-        //assertTrue(mMockWebViewClient.mError);
-=======
+
 	/*
     public final void testLoadInvalidUrl() {
         assertLoadUrl(INVALID_URL);
         assertTrue(mMockWebViewClient.mError);
->>>>>>> 7e31739d614a02095e31f9f4527227d6d96cc2ef
+
     }
 
     //private void assertLoadUrl(String url) {
@@ -45,14 +38,14 @@ public class Android extends TestCase{
         //assertTrue(!(mWeb.getProgress() < 100));            
     }
 
-    //private void sleep() {
+    private void sleep() {
         try {
             Thread.sleep(TIMEOUT);
         } catch (InterruptedException e) {
             fail("Unexpected timeout");
         }
     }
-    //public class MockWebViewClient extends WebViewClient {
+    public class MockWebViewClient extends WebViewClient {
         boolean mError;
 
         @Override
@@ -62,11 +55,11 @@ public class Android extends TestCase{
         }
     }
 	
-	//public void testVideo(){
+	public void testVideo(){
 		assertTrue("This will succeed.", true);
 	}
 
-<<<<<<< HEAD
+
 	
 */
 
