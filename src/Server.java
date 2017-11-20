@@ -28,12 +28,7 @@ public class Server extends TestCase {
 		   assertEquals(true, obj.isStreamOn());
 	   }
 	   
-	   
-	   
 	   public void testDatabaseExists(){
 		   assertEquals(true, obj.isDatabaseAvaialable());
 	   }
-	   
-	   
-	
 }

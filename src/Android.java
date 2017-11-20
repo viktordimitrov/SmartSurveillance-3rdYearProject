@@ -20,8 +20,7 @@ public class Android extends TestCase{
         assertNotSame("asdf", obj.isvalidURL());
     }
 	
-
-	/*
+/*
     public final void testLoadInvalidUrl() {
         assertLoadUrl(INVALID_URL);
         assertTrue(mMockWebViewClient.mError);
@@ -58,9 +57,6 @@ public class Android extends TestCase{
 	public void testVideo(){
 		assertTrue("This will succeed.", true);
 	}
-
-
-	
 */
 
 }
