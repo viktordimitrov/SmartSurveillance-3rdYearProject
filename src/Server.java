@@ -28,7 +28,7 @@ public class Server extends TestCase {
 	   
 	   public void createBoolean(){
 		   
-		   assertEquals(true,
+		   //assertEquals(true, obj.isDB)
 	   }
 	
 }

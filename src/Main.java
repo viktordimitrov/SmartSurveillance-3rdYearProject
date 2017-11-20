@@ -10,9 +10,9 @@ public class Main extends MockObject {
 	}
 	
 	class distributedSystemUnitTesting{
-		Server ser = new Server();
+		//Server ser = new Server();
 		MockObject obj = new MockObject();
-		DbStuff test = new obj.Dbstuff();
+		
 	
 	
 	}
