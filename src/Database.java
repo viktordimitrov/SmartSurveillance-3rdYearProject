@@ -28,7 +28,9 @@ public class Database {
 	    }
 	    return tableExists = false;
 	    
-	}
+   }
+   
+   
    
    public static void main(String[] args) {
 
@@ -97,7 +99,7 @@ public class Database {
    
    	  // START of error handling block
 	  catch (SQLException sqlException){
-		  System.out.println("A connection could not be made with the database.");
+		  System.out.println("A connection could not be made with the database."); 
 	  }catch (ClassNotFoundException e){
 	       // No driver class found!
 	  }catch(Exception e){
