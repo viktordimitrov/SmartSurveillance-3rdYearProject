@@ -7,11 +7,11 @@ public class Database {
    static final String DB_URL = "jdbc:mysql://localhost:3306/test";		// database URL
 
    //  Database credentials
-   static final String USER = "root";	// mySQL account username
-   static final String PASS = "";		// mySQL account password (password is set to null by default)
+   static final String USER = "root"; //mySQL account username
+   static final String PASS = "";	//mySQL account password (password is set to null by default)
    static final String UserInfo = null;	// table name
    
-   static boolean tableExists;			//variable declaration that states if the table exists or not
+   static boolean tableExists;	//variable declaration that states if the table exists or not
    
    
    // method that checks if the table in the database exists
@@ -31,19 +31,21 @@ public class Database {
    Statement stmt = null;
    
    try{
-      //STEP 2: Register JDBC driver
+  //STEP 2: Register JDBC driver
       Class.forName("com.mysql.jdbc.Driver");
 
-      //STEP 3: Open a connection
+  //STEP 3: Open a connection
       System.out.println("Connecting to a selected database...");
-      conn = DriverManager.getConnection(DB_URL, USER, PASS);		// create a connection and name it "conn"
-      System.out.println("Connected database successfully...");		// outputs this unless if it was unsuccessful which would be caught by the error handlers
+      // create a connection and name it "conn"
+      conn = DriverManager.getConnection(DB_URL, USER, PASS);		
+      // outputs this unless if it was unsuccessful which would be caught by the error handlers
+      System.out.println("Connected database successfully... \nSession started.");
       
       
-      //STEP 4: Execute a query
+   //STEP 4: Execute a query
       //Query here is a table being created in the database
-      System.out.println("Creating table in given database...");	
-      stmt = conn.createStatement();  								// creates an instance of a connection and call it "stmt"
+      System.out.println("Creating table in given database...");
+      stmt = conn.createStatement();  // creates an instance of a connection and call it "stmt"
       
       //Checks if table in database exists
       tableExists = tableExist(conn, UserInfo); 
@@ -53,31 +55,36 @@ public class Database {
       System.out.println("Table is already created.");
       }
       
-      //If the table under that name does not exist, create the table under that name and output saying that the table has been created
+      //If the table under that name does not exist, create the table under that name 
+      //and output saying that the table has been created
       if (tableExists == true){
     	  // String sql is an sql command that creates a table with the following columns
-    	  String sql = "CREATE TABLE UserInfo " +	 // writes a sql command to create a table under the name "UserInfo" with 4 columns
-                  "(PRIMARY KEY ( id ) , " +		 // column 1 will store the unique key for this each entry
-                  " user_name VARCHAR(255), " + 	 // column 2 will store the user name in VARCHAR
-                  " password VARCHAR(255), " + 		 // column 3 will store the password also under VARCHAR
-                  " time TIMESTAMP not NULL))"; 	 // column 4 stores the time the entry was added to the database
+    	  String sql = "CREATE TABLE UserInfo " + //creates a table under the name "UserInfo" with 4 columns
+                  "(PRIMARY KEY ( id ) , " +	  //column 1 will store the unique key for this each entry
+                  " user_name VARCHAR(255), " +   //column 2 will store the user name in VARCHAR
+                  " password VARCHAR(255), " + 	  //column 3 will store the password also under VARCHAR
+                  " time TIMESTAMP not NULL))";   //column 4 stores the time the entry was added to the database
 
-      
-      stmt.executeUpdate(sql);	//the sql string is then passed through as a statement through the established connection as an SQL query for the database
-      // if the query was not successfully executed an error will be thrown
-      System.out.println("Created table in given database."); 
+	      //The sql string is then passed through as a statement through the 
+	      //established connection as an SQL query for the database
+	      stmt.executeUpdate(sql);	
+	      
+	      // if the query was not successfully executed an error will be thrown
+	      System.out.println("Created table in given database."); 
       } // end if
-	  } // end try
+    } // end try
    
    	  // START of error handling block
-	  catch (SQLException sqlException) {
+	  catch (SQLException sqlException){
 		  System.out.println("A connection could not be made with the database.");
-	   }catch (ClassNotFoundException e) {
+	  }catch (ClassNotFoundException e){
 	       // No driver class found!
-	   }catch(Exception e){
+	  }catch(Exception e){
 	      //Handle errors for Class.forName
 	      e.printStackTrace();
-	   }finally{
+	  }
+   //STEP 5: Close Resources
+   		finally{
 	      //finally block used to close resources
 	      try{
 	         if(stmt!=null)
@@ -90,11 +97,10 @@ public class Database {
 	      }catch(SQLException se){
 	         se.printStackTrace();
 	      }//end finally try
-	   }//end try
-       // END of error handling block
+	    }//end finally
+      // END of error handling block
    
-	   System.out.println("Goodbye!");
+	   System.out.println("Session Closed!");
 	}//end main
-	   
-   
+	     
 }//end Database
