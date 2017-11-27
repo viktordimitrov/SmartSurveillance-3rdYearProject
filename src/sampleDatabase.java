@@ -50,7 +50,7 @@ public class sampleDatabase {
       
       //if table does not exist do this
       if (tableExists == true){
-    	  String sql = "CREATE TABLE UserInfo " +
+    	  String sql = "CREATE TABLE uses " +
                   "(id TIMESTAMP not NULL, " +
                   " user_name VARCHAR(255), " + 
                   " password VARCHAR(255), " + 
@@ -63,14 +63,7 @@ public class sampleDatabase {
       
 	  }
 	  catch (SQLException sqlException) {
-	       if (sqlException.getErrorCode() == 1007) {
-	           // Database already exists error
-	           System.out.println("Database is already created");
-	       } else {
-	           // Some other problems, e.g. Server down, no permission, etc
-	           sqlException.printStackTrace();
-	       }
-	   } catch (ClassNotFoundException e) {
+	   }catch (ClassNotFoundException e) {
 	       // No driver class found!
 	   }catch(Exception e){
 	      //Handle errors for Class.forName
