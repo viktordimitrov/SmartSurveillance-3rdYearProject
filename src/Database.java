@@ -58,7 +58,7 @@ public class Database {
       //If the table under that name does not exist, create the table under that name 
       //and output saying that the table has been created
       if (tableExists == true){
-    	  // String sql is an sql command that creates a table with the following columns
+    	  //String sql is an sql command that creates a table with the following columns
     	  String sql = "CREATE TABLE UserInfo " + //creates a table under the name "UserInfo" with 4 columns
                   "(PRIMARY KEY ( id ) , " +	  //column 1 will store the unique key for this each entry
                   " user_name VARCHAR(255), " +   //column 2 will store the user name in VARCHAR
