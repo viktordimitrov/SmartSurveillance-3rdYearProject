@@ -1,5 +1,19 @@
+Created by Jonathan Arava
+SYSC 3010
+
 import java.sql.*; //import SQL library
 
+/*
+ Database class:
+ 1.  Establishes a connection with the database.
+ 2.  Executes a query (in this case adds a table).
+	2.1 Checks if a table under that name exists.
+	2.2 If it does, output appropriate message.
+	2.3 If it does not, create a table with the specified conditions.
+		Output message indicating table was created in the database.
+ 3. Close Resources such as connection to the database.	
+     
+*/
 public class Database {
    //STEP 1 : declare variables
    /*
