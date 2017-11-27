@@ -1,4 +1,4 @@
-import java.sql.*;
+import java.sql.*; //import SQL library
 
 public class Database {
    //STEP 1 : declare variables 
