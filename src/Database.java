@@ -1,6 +1,6 @@
 import java.sql.*;
 
-public class sampleDatabase {
+public class Database {
    //STEP 1 : declare variables 
    //JDBC driver name and database URL
    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  		    // mySQL driver
@@ -64,11 +64,12 @@ public class sampleDatabase {
 
       
       stmt.executeUpdate(sql);	//the sql string is then passed through as a statement through the established connection as an SQL query for the database
+      // if the query was not successfully executed an error will be thrown
       System.out.println("Created table in given database."); 
-      }
-      
-      
-	  }
+      } // end if
+	  } // end try
+   
+   	  // START of error handling block
 	  catch (SQLException sqlException) {
 		  System.out.println("A connection could not be made with the database.");
 	   }catch (ClassNotFoundException e) {
@@ -90,8 +91,10 @@ public class sampleDatabase {
 	         se.printStackTrace();
 	      }//end finally try
 	   }//end try
+       // END of error handling block
+   
 	   System.out.println("Goodbye!");
 	}//end main
 	   
    
-}//end sampleDatabase
+}//end Database
