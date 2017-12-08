@@ -1,5 +1,4 @@
-# Group M8 - SYSC 3010 Group Project
-# Dailin Luo, Hanshan Wang, Viktor Dimitrov & Jonathan Arava
+# Group M8: Dailin Luo, Hanshan Wang, Viktor Dimitrov & Jonathan Arava
 
 
 All final files used for the demonstration of the Smart Surveillance Car are within the main branch.
