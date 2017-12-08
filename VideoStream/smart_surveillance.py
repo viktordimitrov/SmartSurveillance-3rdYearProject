@@ -6,6 +6,7 @@ from threading import Lock
 from http import server
 
 # HTML Code for the displayed web page
+#Stream can be accessed at "http://<Pi_IP_Address>:8000"
 PAGE= """\ 
 <html>
 <head>
