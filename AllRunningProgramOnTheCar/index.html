@@ -6,7 +6,7 @@
 </head>
 <body>
 <script type="text/javascript">
-    function go(k){
+    function topy(k){
         $.post('/',{k:k},function(){});
     }
     $(function(){
@@ -14,49 +14,37 @@
         function abc(env){
             env = (env) ? env : window.event;
             if(env.keyCode=='87'){
-                go('w');
+                topy('w');
             }
             if(env.keyCode=='83'){
-                go('s');
+                topy('s');
             }
             if(env.keyCode=='65'){
-                go('a');
+                topy('a');
             }
             if(env.keyCode=='68'){
-                go('d');
-            }
-            if(env.keyCode=='81'){
-                go('q');
-            }
-            if(env.keyCode=='69'){
-                go('e');
-            }
-            if(env.keyCode=='90'){
-                go('z');
-            }
-            if(env.keyCode=='88'){
-                go('x');
+                topy('d');
             }
         }
         var i = null;
         $('.before').mousedown(function(){
             i = setInterval(function(){
-                go('w');
+                topy('w');
             },100);
         });
         $('.left').mousedown(function(){
             i = setInterval(function(){
-                go('a');
+                topy('a');
             },100);
         });
         $('.right').mousedown(function(){
             i = setInterval(function(){
-                go('d');
+                topy('d');
             },100);
         });
         $('.cabk').mousedown(function(){
             i = setInterval(function(){
-                go('s');
+                topy('s');
             },100);
         });
         $('#main span').mouseup(function(){
