@@ -2,8 +2,7 @@
 ## Group M8: Dailin Luo, Hanshan Wang, Viktor Dimitrov & Jonathan Arava
 
 All the project files that were used to run the car during demonstration can be found within the master
-branch of this repository:
-https://github.com/viktordimitrov/groupM8
+branch of this current repository (groupM8).
 
 More information about the Android Application can be found in this repository:
 https://github.com/dailinluo/android
