@@ -9,11 +9,12 @@ More information about the Android Application can be found in this repository:
 https://github.com/dailinluo/android
 
 To run this project, please follow these steps:
-In order to let the video streaming & interaction between the components work properly, please make
+
+*In order to let the video streaming & interaction between the components work properly, please make
 sure to connect the Android phone, Raspberry Pi (Pi camera and the vehicle motor) over the same
 network/wifi (localhost). Video stream performance over Wi-Fi depends on the Wi-Fi speeds. For best
 streaming quality, the stream can be accessed on the RPi itself locally by going to
-http://<Pi_IP_Address>:8000
+http://<Pi_IP_Address>:8000*
 
 1. Run database.py on the RPi 1
 
@@ -38,7 +39,7 @@ application. Please click the "No account? Register here" button to create a use
 password
 
 7. Go back to the sign-in page to login. Once logged in, the video streaming tab will pop up and you
-can watch the live stream (performance will vary depending on Wi-Fi speeds). The video
+can watch the live stream (performance will vary depending on Wi-Fi speeds). *The video
 streaming tab that will open will be the URL that is used for our Raspberry Pi as it is IP address
 dependent. In order to use it with your Pi, you must edit the Webview.java file of the Android
-application and enter your URL there in the format: http://<Pi_IP_Address>:8000
+application and enter your URL there in the format: http://<Pi_IP_Address>:8000*
