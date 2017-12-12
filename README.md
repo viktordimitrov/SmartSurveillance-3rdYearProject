@@ -20,16 +20,16 @@ http://<Pi_IP_Address>:8000*
 2. Download the files from the CarPrograms folder on Github to the RPi 3 on the car, and enter the
 following in the command window:
 
-      sudo python smartsurveillance_car.py
+            sudo python smartsurveillance_car.py
 
-      sudo python smartsurveillance_speed.py
+            sudo python smartsurveillance_speed.py
 
-      sudo python3 smartsurveillance_stream.py
+            sudo python3 smartsurveillance_stream.py
 
 3. Open up the browser on your computer (make sure you have set up remote access to your RPi 3
 from your computer using VNC) and enter the following:
 
-      192.168.0.104:321
+            192.168.0.104:321
 
 4. Control the car using the “WASD” key on the keyboard, or using the four pink buttons on the
 website as forward, backwards, left and right
