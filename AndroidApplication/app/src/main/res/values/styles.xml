@@ -1,11 +1,16 @@
 <resources>
-
-    <!-- Base application theme. -->
+    <!--
+      Created by Dailin Luo
+      Unless specified as personal contribution, this class is adapted from website:
+      http://www.androidtutorialshub.com/android-login-and-register-with-sqlite-database-tutorial/
+ -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textColorHint">@color/colorText</item>
+        <item name="colorControlNormal">@color/colorText</item>
+        <item name="colorControlActivated">@color/colorText</item>
     </style>
-
 </resources>

@@ -1,4 +1,4 @@
-package com.example.buckybarnes.androidapplication;
+package com.example.buckybarnes.test;
 
 import org.junit.Test;
 

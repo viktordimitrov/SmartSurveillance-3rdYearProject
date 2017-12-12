@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+      Created by Dailin Luo
+      Unless specified as personal contribution, this class is adapted from website:
+      http://www.androidtutorialshub.com/android-login-and-register-with-sqlite-database-tutorial/
+ -->
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#428cf4</color>
+    <color name="colorPrimaryDark">#428cf4</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorBackground">#4c4e51</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorTextHint">#428cf4</color>
 </resources>
