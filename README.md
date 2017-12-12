@@ -21,7 +21,9 @@ http://<Pi_IP_Address>:8000*
 following in the command window:
 
 sudo python smartsurveillance_car.py
+
 sudo python smartsurveillance_speed.py
+
 sudo python3 smartsurveillance_stream.py
 
 3. Open up the browser on your computer (make sure you have set up remote access to your RPi 3
