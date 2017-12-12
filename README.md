@@ -17,7 +17,7 @@ http://<Pi_IP_Address>:8000*
 
 1. Run database.py on the RPi 1
 
-2. Download the files from the CarPrograms folder on Github to the RPi 3 on the car, and enter the
+2. Download the files from the CarPrograms folder and the VideoStream folder on Github to the RPi 3 on the car, and enter the
 following in the command window:
 
       sudo python smartsurveillance_car.py
