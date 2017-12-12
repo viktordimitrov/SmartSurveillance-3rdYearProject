@@ -34,7 +34,7 @@ from your computer using VNC) and enter the following:
 4. Control the car using the “WASD” key on the keyboard, or using the four pink buttons on the
 website as forward, backwards, left and right
 
-5. To open up the Android application, download and install the "app-debug.apk" file to your Android
+5. To open up the Android application, download and install the "SmartSurveillance.apk" file to your Android
 phone from the AndroidApplication folder within the Github Repository
 
 6. Once you open the application, you need to register for a username and password to use the
