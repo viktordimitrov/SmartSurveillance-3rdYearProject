@@ -1,5 +1,5 @@
 # SYSC 3010 Group Project
-## Group M8: Dailin Luo, Hanshan Wang, Viktor Dimitrov & Jonathan Arava
+## Group M8: Viktor Dimitrov, Jonathan Arava, Dailin Luo & Hanshan Wang.
 
 All the project files that were used to run the car during demonstration can be found within the master
 branch of this current repository (groupM8).
